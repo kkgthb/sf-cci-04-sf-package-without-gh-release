@@ -32,4 +32,20 @@ sfdx force:package:version:create -k top_secret_ultra_cool_key -v a_clever_sfdx_
  Created By                    005...
 ```
 
-Updated `sfdx-project.json` throughout this process and am now committing it to this repo.  Let's see what happens.
+It installs great from `cci flow run dev_org` in the scope of another package whose `cumulusci.yml` looked like this:
+
+```yaml
+project:
+  # ...
+  dependencies:
+    - version_id: '04t3t000000jG7SAAU'
+```
+
+Updated `sfdx-project.json` throughout this process and am now committing it to this repo.  Let's see what happens with the other package's `cumulusci.yml` like this now:
+
+```yaml
+project:
+  # ...
+  dependencies:
+    - github: 'https://github.com/kkgthb/sf-cci-04-sf-package-without-gh-release'
+```
