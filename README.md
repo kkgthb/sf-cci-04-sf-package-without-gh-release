@@ -49,3 +49,10 @@ project:
   dependencies:
     - github: 'https://github.com/kkgthb/sf-cci-04-sf-package-without-gh-release'
 ```
+
+Yeah, builds just fine from the most-recent-commit of this repo _(which doesn't have any GitHub releases associated with it)_ -- I can tell by the commit number.
+
+It seems that:
+
+1. `- version_id: ...` goes straight out to Salesforce and ignores the existence of a GitHub repo that I, personally, just so happen to know had anything to do with that release.
+2. `- github: ...` doesn't try to "get clever" and parse the `sfdx-project.json` it finds and comb for "`04t...`" Salesforce Package Version IDs or anything.  If there's no "GitHub Release" telling CumulusCI what to do to find a `04t...`" Salesforce Package Version ID, CumulusCI seems not to care about the existence of a "`04t...`" value in `sfdx-project.json` and just treats this repo exactly the same way that it treats [sf-cci-01-minimum-viable-build](https://github.com/kkgthb/sf-cci-01-minimum-viable-build).
