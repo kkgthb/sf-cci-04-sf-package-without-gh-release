@@ -1,9 +1,16 @@
 {
   "packageDirectories": [
-    {
-      "path": "force-app"
-    }
+      {
+          "path": "force-app",
+          "package": "just-the-packs-maam",
+          "versionName": "Version 0.1",
+          "versionNumber": "0.1.0.NEXT"
+      }
   ],
   "namespace": null,
-  "sourceApiVersion": "55.0"
+  "sourceApiVersion": "55.0",
+  "packageAliases": {
+      "just-the-packs-maam": "0Ho3t000000k9otCAA",
+      "just-the-packs-maam@0.1-unlocked-package-beta": "04t3t000000jG7SAAU"
+  }
 }
