@@ -1,0 +1,7 @@
+project:
+  name: salesforce-package-without-github-release
+  package:
+    name: Salesforce package but no GitHub release
+  git:
+    default_branch: 'main'
+  source_format: sfdx

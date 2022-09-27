@@ -1,0 +1,11 @@
+{
+  "orgName": "Salesforce package but no GitHub release - Release Test Org",
+  "edition": "Enterprise",
+  "settings": {
+    "securitySettings": {
+      "sessionSettings": {
+        "forceRelogin": false
+      }
+    }
+  }
+}
