@@ -16,7 +16,7 @@ ERROR running force:package:version:create:  VersionNumber must be in the format
 ```
 
 ```
-sfdx force:package:version:create -k top_secret_ultra_cool_key -v a_clever_sfdx_org_alias -p just-the-packs-maam -d force-app
+sfdx force:package:version:create -x -v a_clever_sfdx_org_alias -p just-the-packs-maam -d force-app
 === Package Version Create Request
  Name                          Value
  ───────────────────────────── ───────────────────────────────────────────────────────────────────────────────── 
