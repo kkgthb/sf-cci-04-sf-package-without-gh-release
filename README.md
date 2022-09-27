@@ -62,3 +62,15 @@ project:
 ```
 
 Yeah, builds just fine from the most-recent-commit of this repo _(which doesn't have any GitHub releases associated with it)_ -- I can tell by the commit number.
+
+Hooray, my first-ever package!
+
+I should release it, just to feel finished:
+
+```
+sfdx force:package:version:promote -p 04t3t000000jG7SAAU -v a_clever_sfdx_org_alias
+Are you sure you want to release package version 04t3t000000jG7SAAU? You can't undo this action. Release package (y/n)?: y
+ERROR running force:package:version:promote:  Code coverage has not been run for this version.  Code coverage must be run during version creation and meet the minimum coverage requirement to promote the version.
+```
+
+Eh.  Whatever, I don't care that much.  Moving on.
